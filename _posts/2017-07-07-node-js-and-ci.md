@@ -102,7 +102,7 @@ It Works!
     travis encrypt "OUR_KEY_FROM_CHANNEL_SETTINGS" --add notifications.slack
     ```
 
-8. After key is encrpted and added to .travis.yml, we do git push and enjoy!
+8. After key is encrpted and added to .travis.yml, we do `git push` and enjoy!
 
 ### Enable Heroku notification in Slack
 
