@@ -78,6 +78,20 @@ It Works!
 
 1. Create file `.travis.yml` in root directory
 
+    ```
+    language: node_js 
+    node_js:
+    - '6'
+    services:
+    - mongodb
+    addons:
+      apt: 
+        sources: 
+        - ubuntu-toolchain-r-test
+        packages:
+        - g++-4.8    
+    ```
+
 2. On TravisCI add repository, enable "Build only if .travis.yml is present" and "Build pull request updates"
 
 3. Push our project with `.travis.yml`
