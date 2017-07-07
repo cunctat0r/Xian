@@ -76,11 +76,11 @@ It Works!
 
 ### Integration with TravisCI
 
-1. Create file .travis.yml in root directory
+1. Create file `.travis.yml` in root directory
 
 2. On TravisCI add repository, enable "Build only if .travis.yml is present" and "Build pull request updates"
 
-3. Push our project with .travis.yml
+3. Push our project with `.travis.yml`
 
     ```
     git push
@@ -90,19 +90,19 @@ It Works!
 
 5. To add [Slack](https://slack.com/) notifications, we need to have our own Slack team. We create channel for our project, add to this channel TravisCI integration and follow the instructions.
 
-6. It's strongly recommended to encript the API keys. We need travis gem to do it.
+6. It's strongly recommended to encript the API keys. We need `travis` gem to do it.
 
     ```
     gem install travis
     ```
 
-7. Add encrypted key to .travis.yml:
+7. Add encrypted key to `.travis.yml`:
 
     ```
     travis encrypt "OUR_KEY_FROM_CHANNEL_SETTINGS" --add notifications.slack
     ```
 
-8. After key is encrpted and added to .travis.yml, we do `git push` and enjoy!
+8. After key is encrpted and added to `.travis.yml`, we do `git push` and enjoy!
 
 ### Enable Heroku notification in Slack
 
