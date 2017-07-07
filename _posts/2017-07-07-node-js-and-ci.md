@@ -4,11 +4,13 @@ layout: post
 
 ## Setting up some CI for simple node.js project
 
-This tutorial is my "memory card" how to set up some CI/CD features for simple node.js project. When I push changes to Github repository, automated tests on TravisCI are running, after successful tests TravisCI deploys the project on Heroku. 
+This tutorial is my "memory card" how to set up some CI/CD features for simple node.js project. When I push changes to [GitHub](http://github.com)  repository, automated tests on [TravisCI](https://travis-ci.org/) are running, after successful tests TravisCI deploys the project on [Heroku](https://heroku.com). 
 
-### First we create and set up our project.
+### Creating project
 
-1. Create repository on github and initialize it with readme
+First we create and set up our project.
+
+1. Create repository on GitHub  and initialize it with readme
 
 2. Clone repository
 
@@ -42,9 +44,15 @@ This tutorial is my "memory card" how to set up some CI/CD features for simple n
 
 7. Add some code to create minimal working sample
 
-8. Push on github
+8. Push to GitHub
 
-### Next, we create Heroku application. We assume that heroku CLI is installed.
+    ```
+    git push
+    ```
+
+### Creating [Heroku](https://heroku.com) application
+
+Next, we create [Heroku](https://heroku.com) application. We assume that heroku CLI is installed.
 
 1. Create Heroku application
 
@@ -66,11 +74,11 @@ This tutorial is my "memory card" how to set up some CI/CD features for simple n
 
 It Works!
 
-### Integration with TravisCI
+### Integration with [TravisCI](https://travis-ci.org/)
 
 1. Create file .travis.yml in root directory
 
-2. On travis-ci.org add repository, enable "Build only if .travis.yml is present" and "Build pull request updates"
+2. On TravisCI add repository, enable "Build only if .travis.yml is present" and "Build pull request updates"
 
 3. Push our project with .travis.yml
 
@@ -80,7 +88,7 @@ It Works!
 
 4. If we want, we can add TravisCI badge to readme.md
 
-5. To add Slack notifications, we need to have our own Slack team. We create channel for our project, add to this channel TravisCI integration and follow the instructions.
+5. To add [Slack](https://slack.com/) notifications, we need to have our own Slack team. We create channel for our project, add to this channel TravisCI integration and follow the instructions.
 
 6. It's strongly recommended to encript the API keys. We need travis gem to do it.
 
@@ -96,7 +104,7 @@ It Works!
 
 8. After key is encrpted and added to .travis.yml, we do git push and enjoy!
 
-### Enable Heroku notification
+### Enable Heroku notification in Slack
 
 1. In Slack, add Heroku integration. Following the instruction, run the command in project directory:
 
@@ -119,11 +127,11 @@ Automatic deploy to Heroku using TravisCI after successfull build:
     app: heroku_app_name
     ```
 
-4. Push our project to Github only:
+4. Push our project to [GitHub](http://github.com) only:
 
     ```
     git push
     ```
 
-All work for us will be done by Github and TravisCI, we will receive notifications in our Slack channel.
+All work for us will be done by [GitHub](http://github.com) and [TravisCI](https://travis-ci.org/), we will receive notifications in our Slack channel.
 
