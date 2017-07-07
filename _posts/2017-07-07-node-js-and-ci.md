@@ -12,9 +12,9 @@ This tutorial is my "memory card" how to set up some CI/CD features for simple n
 
 2. Clone repository
 
-  ```
-  git clone git@github.com:cunctat0r/sw_stations_api.git
-  ```
+    ```
+    git clone git@github.com:cunctat0r/sw_stations_api.git
+    ```
 
 3. Go to the project's folder:
 
