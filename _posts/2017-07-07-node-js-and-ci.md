@@ -112,7 +112,7 @@ It Works!
     heroku addons:create deployhooks:http --url https://hooks.slack.com/services/XXXXXXXXXXX
     ```
 
-Automatic deploy to Heroku using TravisCI after successfull build:
+### Automatic deploy to Heroku using TravisCI after successfull build:
 
 2. Execute command in project directory:
 
