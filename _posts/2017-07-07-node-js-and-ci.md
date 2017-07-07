@@ -2,7 +2,7 @@
 layout: post
 ---
 
-## Setting up some CI for simple node.js project
+## Setting up some CI for simple Node.js project
 
 This tutorial is my "memory card" how to set up some CI/CD features for simple node.js project. When I push changes to [GitHub](http://github.com)  repository, automated tests on [TravisCI](https://travis-ci.org/) are running, after successful tests TravisCI deploys the project on [Heroku](https://heroku.com). 
 
@@ -15,13 +15,13 @@ First we create and set up our project.
 2. Clone repository
 
     ```
-    git clone git@github.com:cunctat0r/sw_stations_api.git
+    git clone git@github.com:<user>/<repo>.git
     ```
 
 3. Go to the project's folder:
 
     ```
-    cd sw_stations_api
+    cd <working_dir>
     ```
 
 4. Initialize the project:
@@ -50,7 +50,7 @@ First we create and set up our project.
     git push
     ```
 
-### Creating [Heroku](https://heroku.com) application
+### Creating Heroku application
 
 Next, we create [Heroku](https://heroku.com) application. We assume that heroku CLI is installed.
 
@@ -74,7 +74,7 @@ Next, we create [Heroku](https://heroku.com) application. We assume that heroku 
 
 It Works!
 
-### Integration with [TravisCI](https://travis-ci.org/)
+### Integration with TravisCI
 
 1. Create file .travis.yml in root directory
 
@@ -127,7 +127,7 @@ Automatic deploy to Heroku using TravisCI after successfull build:
     app: heroku_app_name
     ```
 
-4. Push our project to [GitHub](http://github.com) only:
+4. Push our project to GitHub only:
 
     ```
     git push
