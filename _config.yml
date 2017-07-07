@@ -1,7 +1,7 @@
 title: Slava Petrov   # your title
 author: Slava Petrov # your name
 description: Just have some fun here # your description
-avatar: /images/avatar.png # change avatar
+avatar: https://secure.gravatar.com/avatar/4fc76de0d6edf025dff76b4b2c5997e8 
 
 # Build Settings
 markdown: kramdown
