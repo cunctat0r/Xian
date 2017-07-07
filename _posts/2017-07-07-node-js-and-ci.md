@@ -18,27 +18,27 @@ This tutorial is my "memory card" how to set up some CI/CD features for simple n
 
 3. Go to the project's folder:
 
-  ```
-  cd sw_stations_api
-  ```
+    ```
+    cd sw_stations_api
+    ```
 
 4. Initialize the project:
 
-  ```
-  npm init
-  ```
+    ```
+    npm init
+    ```
 
 5. Install project dependencies:
 
-  ```
-  npm install body-parser express mongodb mongoose --save
-  ```
+    ```
+    npm install body-parser express mongodb mongoose --save
+    ```
 
 6. Install development dependencies:
 
-  ```
-  npm install expect mocha nodemon supertest --save-dev
-  ```
+    ```
+    npm install expect mocha nodemon supertest --save-dev
+    ```
 
 7. Add some code to create minimal working sample
 
@@ -48,21 +48,21 @@ This tutorial is my "memory card" how to set up some CI/CD features for simple n
 
 1. Create Heroku application
 
-  ```
-  heroku create
-  ```
+    ```
+    heroku create
+    ```
 
 2. Add mongolab addon to use Mongodb:
 
-  ```
-  heroku addons:create mongolab:sandbox
-  ```
+    ```
+    heroku addons:create mongolab:sandbox
+    ```
 
 3. Push our repository to Heroku:
 
-  ```
-  git push heroku master
-  ```
+    ```
+    git push heroku master
+    ```
 
 It Works!
 
@@ -74,9 +74,9 @@ It Works!
 
 3. Push our project with .travis.yml
 
-  ```
-  git push
-  ```
+    ```
+    git push
+    ```
 
 4. If we want, we can add TravisCI badge to readme.md
 
@@ -84,15 +84,15 @@ It Works!
 
 6. It's strongly recommended to encript the API keys. We need travis gem to do it.
 
-  ```
-  gem install travis
-  ```
+    ```
+    gem install travis
+    ```
 
 7. Add encrypted key to .travis.yml:
 
-  ```
-  travis encrypt "OUR_KEY_FROM_CHANNEL_SETTINGS" --add notifications.slack
-  ```
+    ```
+    travis encrypt "OUR_KEY_FROM_CHANNEL_SETTINGS" --add notifications.slack
+    ```
 
 8. After key is encrpted and added to .travis.yml, we do git push and enjoy!
 
@@ -100,30 +100,30 @@ It Works!
 
 1. In Slack, add Heroku integration. Following the instruction, run the command in project directory:
 
-  ```
-  heroku addons:create deployhooks:http --url https://hooks.slack.com/services/XXXXXXXXXXX
-  ```
+    ```
+    heroku addons:create deployhooks:http --url https://hooks.slack.com/services/XXXXXXXXXXX
+    ```
 
 Automatic deploy to Heroku using TravisCI after successfull build:
 
 2. Execute command in project directory:
 
-  ```
-  travis encrypt $(heroku auth:token) --add deploy.api_key
-  ```
+    ```
+    travis encrypt $(heroku auth:token) --add deploy.api_key
+    ```
 
 3. Add to .travis.yml lines (before encrypted Heroku token):
 
-  ```
-  provider: heroku
-  app: heroku_app_name
-  ```
+    ```
+    provider: heroku
+    app: heroku_app_name
+    ```
 
 4. Push our project to Github only:
 
-  ```
-  git push
-  ```
+    ```
+    git push
+    ```
 
 All work for us will be done by Github and TravisCI, we will receive notifications in our Slack channel.
 
