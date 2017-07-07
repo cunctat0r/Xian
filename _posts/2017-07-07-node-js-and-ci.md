@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 # Setting up some CI for simple node.js project
 
 This tutorial is my "memory card" how to set up some CI/CD features for simple node.js project. When I push changes to Github repository, automated tests on TravisCI are running, after successful tests TravisCI deploys the project on Heroku. 
