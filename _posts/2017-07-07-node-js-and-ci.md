@@ -112,22 +112,24 @@ It Works!
     heroku addons:create deployhooks:http --url https://hooks.slack.com/services/XXXXXXXXXXX
     ```
 
-### Automatic deploy to Heroku using TravisCI after successfull build:
+### Auto-deploy to Heroku
 
-2. Execute command in project directory:
+Now we can automatically deploy our application to Heroku using TravisCI after successfull build:
+
+1. Execute command in project directory:
 
     ```
     travis encrypt $(heroku auth:token) --add deploy.api_key
     ```
 
-3. Add to .travis.yml lines (before encrypted Heroku token):
+2. Add to .travis.yml lines (before encrypted Heroku token):
 
     ```
     provider: heroku
     app: heroku_app_name
     ```
 
-4. Push our project to GitHub only:
+3. Push our project to GitHub only:
 
     ```
     git push
