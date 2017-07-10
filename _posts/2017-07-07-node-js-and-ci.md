@@ -126,6 +126,10 @@ It Works!
     heroku addons:create deployhooks:http --url https://hooks.slack.com/services/XXXXXXXXXXX
     ```
 
+### Enable Github notifications in Slack
+
+1. In Slack, add Github notifications. To do this, add Github integration to Slack channl, autorize to Github, select repository to integrate.
+
 ### Auto-deploy to Heroku
 
 Now we can automatically deploy our application to Heroku using TravisCI after successfull build:
