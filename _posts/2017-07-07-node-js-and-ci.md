@@ -128,7 +128,7 @@ It Works!
 
 ### Enable Github notifications in Slack
 
-1. In Slack, add Github notifications. To do this, add Github integration to Slack channl, autorize to Github, select repository to integrate.
+1. In Slack, add Github notifications. To do this, add Github integration to Slack channel, authorize to Github, select repository to integrate.
 
 ### Auto-deploy to Heroku
 
