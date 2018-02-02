@@ -66,5 +66,23 @@ layout: post
 	site-packages (from Jinja2>=2.4->flask)
 	```
 
+8. Next, we create `app` directory, create flask files, using "Flask Mega-tutorial".
+
+9. To run our application, we set environment variable:
+
+	```
+	(venv) C:\Users\Slava\microblog>set FLASK_APP=microblog.py
+	```
+10. Run flask and access pages in brouser: 
+
+	```
+	(venv) C:\Users\Slava\microblog>flask run
+ 	* Serving Flask app "microblog"
+ 	* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+	127.0.0.1 - - [02/Feb/2018 09:59:52] "GET / HTTP/1.1" 200 -
+	127.0.0.1 - - [02/Feb/2018 09:59:52] "GET /favicon.ico HTTP/1.1" 404 -
+	127.0.0.1 - - [02/Feb/2018 09:59:53] "GET /favicon.ico HTTP/1.1" 404 -
+	```
+
 
 To be continued...
