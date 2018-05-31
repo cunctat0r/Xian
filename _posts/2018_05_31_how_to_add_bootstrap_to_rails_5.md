@@ -22,8 +22,6 @@ Generate scaffold for our first model.
 rails generate scaffold Link name:string url:string
 ```
 
-```
-
 Perform pending migrations.
 
 
