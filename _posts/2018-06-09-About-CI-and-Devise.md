@@ -6,7 +6,7 @@ If I want to use [Travis CI](https://travis-ci.org) with Rails application using
 
 1. Add to my Devise initializer `config/initializers/devise.rb`
 
-  ``` ruby
+  ``` 
   config.secret_key = ENV['SECRET_KEY_BASE']
   ```
 
